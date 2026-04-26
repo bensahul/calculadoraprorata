@@ -15,9 +15,9 @@ public class MenuController {
     public MenuController() {
         view = new MenuView();
         view.getBtnProrata().addActionListener(e -> { new ProrataController(); view.dispose(); });
-        view.getBtnMulta().addActionListener(e -> { /* new MultaController(); */ view.dispose(); });
+        view.getBtnMulta().addActionListener(e -> { new MultaController(); view.dispose(); });
         view.getBtnSair().addActionListener(e -> {
-            if (JOptionPane.showConfirmDialog(view, "Sair?", "Sair", JOptionPane.YES_NO_OPTION) == 0) System.exit(0);
+            if (JOptionPane.showConfirmDialog(view, "Deseja realmente sair?", "Sair", JOptionPane.YES_NO_OPTION) == 0) System.exit(0);
         });
         view.setVisible(true);
     }
