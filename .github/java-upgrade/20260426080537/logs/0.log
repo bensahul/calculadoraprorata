@@ -1,0 +1,653 @@
+2026-04-26T08:05:37.446Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-26T08:05:37.447Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "event": "precheckCompleted",
+  "phase": "precheck",
+  "status": "succeeded"
+}}).
+2026-04-26T08:05:37.448Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:05:37.454Z [INFO] Project c:\Users\direct\Documents\VS Projects\calculadoraprorata is a maven project, try to get java version from pom.xml
+2026-04-26T08:05:37.456Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'precheckCompleted' reported!\nSession ID: 20260426080537,\nSession Dir: c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata\\.github\\java-upgrade\\20260426080537"
+}}).
+2026-04-26T08:05:37.457Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-26T08:05:37.461Z [INFO] Project java version: 7
+2026-04-26T08:05:37.462Z [INFO] Maven project detected.
+2026-04-26T08:05:37.462Z [INFO] Build tool type: mvn
+2026-04-26T08:05:37.556Z [INFO] JDK: undefined
+2026-04-26T08:05:37.557Z [ERROR] Failed to detect or resolve JDK for the project at c:\Users\direct\Documents\VS Projects\calculadoraprorata.
+2026-04-26T08:05:37.557Z [WARN] [ReportEventTool] Full project info unavailable, attempting lightweight fallback: UserError: Failed to detect or resolve JDK for the project at c:\Users\direct\Documents\VS Projects\calculadoraprorata. Please ensure JDK 7 is installed and properly configured on the machine.
+2026-04-26T08:05:37.559Z [INFO] Maven project detected.
+2026-04-26T08:05:37.559Z [INFO] Project c:\Users\direct\Documents\VS Projects\calculadoraprorata is a maven project, try to get java version from pom.xml
+2026-04-26T08:05:42.061Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-26T08:05:42.061Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planGenerationStarted",
+  "phase": "plan",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:05:42.062Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:05:42.062Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-26T08:05:42.063Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-26T08:05:42.106Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-26T08:05:42.107Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "event": "planGenerationStarted",
+  "phase": "plan",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:05:42.107Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:05:42.109Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planGenerationStarted' reported!\nSession ID: 20260426080537,\nSession Dir: c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata\\.github\\java-upgrade\\20260426080537"
+}}).
+2026-04-26T08:05:42.110Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-26T08:05:45.725Z [INFO] ---------------------prepare appmod-list-jdks----------------------
+2026-04-26T08:05:45.726Z [INFO] [Tool.prepareInvocation]({name: appmod-list-jdks, input: {
+  "sessionId": "20260426080537"
+}}).
+2026-04-26T08:05:45.726Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:05:45.727Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List jdks"
+}}).
+2026-04-26T08:05:45.727Z [INFO] ----------------------prepared appmod-list-jdks----------------------
+2026-04-26T08:05:45.770Z [INFO] ----------------------invoke appmod-list-jdks----------------------
+2026-04-26T08:05:45.771Z [INFO] [Tool.invoke]({name: appmod-list-jdks, modelId: auto, input: {
+  "sessionId": "20260426080537"
+}}).
+2026-04-26T08:05:45.771Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:05:45.789Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following jdks in your system:\n\n1. Java 25.0.2\n   📁 Path: C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin\n   🏷️ Source: PATH\n\nTotal: 1 JDK installation(s) found"
+}}).
+2026-04-26T08:05:45.789Z [INFO] ----------------------invoked appmod-list-jdks----------------------
+2026-04-26T08:05:45.807Z [INFO] ---------------------prepare appmod-list-mavens----------------------
+2026-04-26T08:05:45.807Z [INFO] [Tool.prepareInvocation]({name: appmod-list-mavens, input: {
+  "sessionId": "20260426080537",
+  "includeVersion": true
+}}).
+2026-04-26T08:05:45.807Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:05:45.808Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List mavens"
+}}).
+2026-04-26T08:05:45.808Z [INFO] ----------------------prepared appmod-list-mavens----------------------
+2026-04-26T08:05:45.906Z [INFO] ----------------------invoke appmod-list-mavens----------------------
+2026-04-26T08:05:45.907Z [INFO] [Tool.invoke]({name: appmod-list-mavens, modelId: auto, input: {
+  "sessionId": "20260426080537",
+  "includeVersion": true
+}}).
+2026-04-26T08:05:45.907Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:05:46.599Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following maven installations in your system:\n\n1. Maven 3.9.12\n   📁 Path: C:\\Program Files\\Apache NetBeans\\java\\maven\\bin\n   🏷️ Source: PATH\n\nTotal: 1 Maven installation(s) found"
+}}).
+2026-04-26T08:05:46.600Z [INFO] ----------------------invoked appmod-list-mavens----------------------
+2026-04-26T08:07:46.054Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-26T08:07:46.055Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planReviewed",
+  "phase": "plan",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:07:46.055Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:07:46.056Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-26T08:07:46.057Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-26T08:07:46.103Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-26T08:07:46.104Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "event": "planReviewed",
+  "phase": "plan",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:07:46.105Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:07:46.107Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planReviewed' reported!\nSession ID: 20260426080537,\nSession Dir: c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata\\.github\\java-upgrade\\20260426080537"
+}}).
+2026-04-26T08:07:46.107Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-26T08:07:48.834Z [INFO] ---------------------prepare appmod-confirm-upgrade-plan----------------------
+2026-04-26T08:07:48.834Z [INFO] [Tool.prepareInvocation]({name: appmod-confirm-upgrade-plan, input: {
+  "sessionId": "20260426080537"
+}}).
+2026-04-26T08:07:48.835Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:07:48.836Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Review [upgrade plan](file:///c:/Users/direct/Documents/VS Projects/calculadoraprorata/.github/java-upgrade/20260426080537/plan.md)",
+  "confirmationMessages": {
+    "title": "Plan generated",
+    "message": "Please review the generated plan and make any necessary adjustments before proceeding. You can modify the generated [`plan.md`](file:///c:/Users/direct/Documents/VS Projects/calculadoraprorata/.github/java-upgrade/20260426080537/plan.md) directly."
+  }
+}}).
+2026-04-26T08:07:48.836Z [INFO] ----------------------prepared appmod-confirm-upgrade-plan----------------------
+2026-04-26T08:08:19.400Z [INFO] ----------------------invoke appmod-confirm-upgrade-plan----------------------
+2026-04-26T08:08:19.401Z [INFO] [Tool.invoke]({name: appmod-confirm-upgrade-plan, modelId: auto, input: {
+  "sessionId": "20260426080537"
+}}).
+2026-04-26T08:08:19.401Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:08:19.402Z [INFO] Upgrade plan confirmed successfully.
+2026-04-26T08:08:19.407Z [INFO] [Tool.invoke]({result: {
+  "message": "Generated plan is reviewed and confirmed by the user! the upgrade process will start now and be tracked in markdown file: c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata\\.github\\java-upgrade\\20260426080537\\progress.md."
+}}).
+2026-04-26T08:08:19.409Z [INFO] ----------------------invoked appmod-confirm-upgrade-plan----------------------
+2026-04-26T08:08:24.234Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-26T08:08:24.234Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planConfirmed",
+  "phase": "plan",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:08:24.234Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:08:24.235Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-26T08:08:24.235Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-26T08:08:24.273Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-26T08:08:24.273Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "event": "planConfirmed",
+  "phase": "plan",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:08:24.273Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:08:24.274Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planConfirmed' reported!\nSession ID: 20260426080537,\nSession Dir: c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata\\.github\\java-upgrade\\20260426080537"
+}}).
+2026-04-26T08:08:24.275Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-26T08:09:07.083Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-26T08:09:07.084Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planExecutionStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:09:07.084Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:09:07.085Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-26T08:09:07.085Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-26T08:09:07.124Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-26T08:09:07.124Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "event": "planExecutionStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:09:07.125Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:09:07.223Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planExecutionStarted' reported!\nSession ID: 20260426080537,\nSession Dir: c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata\\.github\\java-upgrade\\20260426080537"
+}}).
+2026-04-26T08:09:07.224Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-26T08:09:20.065Z [INFO] ---------------------prepare appmod-install-jdk----------------------
+2026-04-26T08:09:20.065Z [INFO] [Tool.prepareInvocation]({name: appmod-install-jdk, input: {
+  "sessionId": "20260426080537",
+  "version": "21"
+}}).
+2026-04-26T08:09:20.065Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:09:20.616Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Download and install JDK",
+  "confirmationMessages": {
+    "title": "Download and install JDK",
+    "message": "\nThis tool will download and install JDK 21 from Microsoft with below settings.\n- **Version**: 21\n- **Vendor**: Microsoft\n- **Url**: https://aka.ms/download-jdk/microsoft-jdk-21.0.8-windows-x64.zip\n- **Destination**: `C:\\Users\\direct\\.jdk`\n- **Checksum**: SHA256: 6ecfa864b95a45cde05d92351edf06d33b778669499b485bb8414145704fae0a\n- **Signature**: https://aka.ms/download-jdk/microsoft-jdk-21.0.8-windows-x64.zip.sig\n- **Public Key**: http://aka.ms/microsoft_jdk_public_key\n"
+  }
+}}).
+2026-04-26T08:09:20.617Z [INFO] ----------------------prepared appmod-install-jdk----------------------
+2026-04-26T08:09:24.249Z [INFO] ----------------------invoke appmod-install-jdk----------------------
+2026-04-26T08:09:24.249Z [INFO] [Tool.invoke]({name: appmod-install-jdk, modelId: auto, input: {
+  "sessionId": "20260426080537",
+  "version": "21"
+}}).
+2026-04-26T08:09:24.249Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:09:47.961Z [INFO] [Tool.invoke]({result: {
+  "result": {
+    "name": "java",
+    "path": "C:\\Users\\direct\\.jdk\\jdk-21.0.8\\bin",
+    "version": "21.0.8"
+  },
+  "message": "JDK 21 is installed at C:\\Users\\direct\\.jdk\\jdk-21.0.8\\bin",
+  "telemetry": {
+    "tool": "JDK",
+    "version": "21"
+  }
+}}).
+2026-04-26T08:09:47.962Z [INFO] ----------------------invoked appmod-install-jdk----------------------
+2026-04-26T08:09:52.848Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-26T08:09:52.849Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "environmentSetup",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded",
+  "details": {
+    "jdkPath": "C:\\Users\\direct\\.jdk\\jdk-21.0.8\\bin",
+    "buildToolPath": "C:\\Program Files\\Apache NetBeans\\java\\maven\\bin"
+  }
+}}).
+2026-04-26T08:09:52.850Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:09:52.850Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-26T08:09:52.851Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-26T08:09:52.894Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-26T08:09:52.895Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "event": "environmentSetup",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded",
+  "details": {
+    "jdkPath": "C:\\Users\\direct\\.jdk\\jdk-21.0.8\\bin",
+    "buildToolPath": "C:\\Program Files\\Apache NetBeans\\java\\maven\\bin"
+  }
+}}).
+2026-04-26T08:09:52.895Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:09:52.897Z [INFO] Project c:\Users\direct\Documents\VS Projects\calculadoraprorata is a maven project, try to get java version from pom.xml
+2026-04-26T08:09:52.899Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'environmentSetup' reported!\nSession ID: 20260426080537,\nSession Dir: c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata\\.github\\java-upgrade\\20260426080537"
+}}).
+2026-04-26T08:09:52.899Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-26T08:09:52.903Z [INFO] Project java version: 7
+2026-04-26T08:09:52.905Z [INFO] Build tool type detected from path: mvn
+2026-04-26T08:09:52.905Z [INFO] Build tool type: mvn
+2026-04-26T08:09:52.906Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Users\\direct\\.jdk\\jdk-21.0.8\\bin",
+  "version": "7"
+}
+2026-04-26T08:09:52.906Z [INFO] Build tool: {
+  "name": "mvn",
+  "path": "C:\\Program Files\\Apache NetBeans\\java\\maven\\bin",
+  "version": ""
+}
+2026-04-26T08:09:52.906Z [INFO] Project config: {
+  "buildTool": {
+    "path": "C:\\Program Files\\Apache NetBeans\\java\\maven\\bin",
+    "name": "mvn",
+    "version": ""
+  },
+  "jdk": {
+    "path": "C:\\Users\\direct\\.jdk\\jdk-21.0.8\\bin",
+    "name": "java",
+    "version": "7"
+  },
+  "name": "calculadoraprorata",
+  "dir": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata"
+}
+2026-04-26T08:10:29.196Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-26T08:10:29.196Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "baselineSetup",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:10:29.196Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:10:29.197Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-26T08:10:29.197Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-26T08:10:29.249Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-26T08:10:29.249Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "event": "baselineSetup",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:10:29.250Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:10:29.251Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'baselineSetup' reported!\nSession ID: 20260426080537,\nSession Dir: c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata\\.github\\java-upgrade\\20260426080537"
+}}).
+2026-04-26T08:10:29.252Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-26T08:11:53.488Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-26T08:11:53.488Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "details": {
+    "stepNumber": 3,
+    "stepTitle": "Upgrade Maven Build Plugins"
+  },
+  "event": "upgradeStepStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:11:53.488Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:11:53.489Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-26T08:11:53.489Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-26T08:11:53.536Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-26T08:11:53.537Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "details": {
+    "stepNumber": 3,
+    "stepTitle": "Upgrade Maven Build Plugins"
+  },
+  "event": "upgradeStepStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:11:53.537Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:11:53.538Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradeStepStarted' reported!\nSession ID: 20260426080537,\nSession Dir: c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata\\.github\\java-upgrade\\20260426080537"
+}}).
+2026-04-26T08:11:53.539Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-26T08:11:53.561Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-26T08:11:53.561Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "details": {
+    "stepNumber": 3,
+    "stepTitle": "Upgrade Maven Build Plugins",
+    "commitId": "N/A"
+  },
+  "event": "upgradeStepCompleted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:11:53.562Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:11:53.563Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-26T08:11:53.563Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-26T08:11:53.614Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-26T08:11:53.614Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "details": {
+    "stepNumber": 3,
+    "stepTitle": "Upgrade Maven Build Plugins",
+    "commitId": "N/A"
+  },
+  "event": "upgradeStepCompleted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:11:53.615Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:11:53.616Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradeStepCompleted' reported!\nSession ID: 20260426080537,\nSession Dir: c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata\\.github\\java-upgrade\\20260426080537"
+}}).
+2026-04-26T08:11:53.616Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-26T08:12:24.692Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-26T08:12:24.692Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "details": {
+    "stepNumber": 4,
+    "stepTitle": "Update Java Version and Dependencies"
+  },
+  "event": "upgradeStepStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:12:24.694Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:12:24.694Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-26T08:12:24.695Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-26T08:12:24.745Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-26T08:12:24.746Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "details": {
+    "stepNumber": 4,
+    "stepTitle": "Update Java Version and Dependencies"
+  },
+  "event": "upgradeStepStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:12:24.746Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:12:24.748Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradeStepStarted' reported!\nSession ID: 20260426080537,\nSession Dir: c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata\\.github\\java-upgrade\\20260426080537"
+}}).
+2026-04-26T08:12:24.748Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-26T08:12:24.764Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-26T08:12:24.765Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "details": {
+    "commitId": "N/A",
+    "stepNumber": 4,
+    "stepTitle": "Update Java Version and Dependencies"
+  },
+  "event": "upgradeStepCompleted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:12:24.765Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:12:24.766Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-26T08:12:24.766Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-26T08:12:24.820Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-26T08:12:24.821Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "details": {
+    "commitId": "N/A",
+    "stepNumber": 4,
+    "stepTitle": "Update Java Version and Dependencies"
+  },
+  "event": "upgradeStepCompleted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:12:24.821Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:12:24.822Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradeStepCompleted' reported!\nSession ID: 20260426080537,\nSession Dir: c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata\\.github\\java-upgrade\\20260426080537"
+}}).
+2026-04-26T08:12:24.822Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-26T08:13:40.944Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-26T08:13:40.945Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "details": {
+    "stepNumber": 5,
+    "stepTitle": "Final Validation",
+    "commitId": "N/A"
+  },
+  "event": "upgradeValidationCompleted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:13:40.945Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:13:40.945Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-26T08:13:40.946Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-26T08:13:40.988Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-26T08:13:40.988Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "details": {
+    "stepNumber": 5,
+    "stepTitle": "Final Validation",
+    "commitId": "N/A"
+  },
+  "event": "upgradeValidationCompleted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:13:40.989Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:13:40.990Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradeValidationCompleted' reported!\nSession ID: 20260426080537,\nSession Dir: c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata\\.github\\java-upgrade\\20260426080537"
+}}).
+2026-04-26T08:13:40.991Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-26T08:13:41.002Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-26T08:13:41.003Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planExecutionCompleted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:13:41.003Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:13:41.003Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-26T08:13:41.004Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-26T08:13:41.055Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-26T08:13:41.056Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "event": "planExecutionCompleted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:13:41.056Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:13:41.060Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planExecutionCompleted' reported!\nSession ID: 20260426080537,\nSession Dir: c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata\\.github\\java-upgrade\\20260426080537"
+}}).
+2026-04-26T08:13:41.060Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-26T08:14:20.161Z [INFO] ---------------------prepare appmod-validate-cves-for-java----------------------
+2026-04-26T08:14:20.161Z [INFO] [Tool.prepareInvocation]({name: appmod-validate-cves-for-java, input: {
+  "dependencies": [
+    "junit:junit:4.13.2"
+  ],
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537"
+}}).
+2026-04-26T08:14:20.162Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:14:20.162Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-04-26T08:14:20.162Z [INFO] ----------------------prepared appmod-validate-cves-for-java----------------------
+2026-04-26T08:14:20.203Z [INFO] ----------------------invoke appmod-validate-cves-for-java----------------------
+2026-04-26T08:14:20.204Z [INFO] [Tool.invoke]({name: appmod-validate-cves-for-java, modelId: auto, input: {
+  "dependencies": [
+    "junit:junit:4.13.2"
+  ],
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537"
+}}).
+2026-04-26T08:14:20.204Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:14:20.205Z [INFO] Project c:\Users\direct\Documents\VS Projects\calculadoraprorata is a maven project, try to get java version from pom.xml
+2026-04-26T08:14:20.206Z [INFO] Getting CVEs for dependencies: junit:junit:4.13.2
+2026-04-26T08:14:20.206Z [INFO] getting CVEs for dependencies:
+ - junit:junit:4.13.2...
+2026-04-26T08:14:20.207Z [INFO] getting gitHub access token...
+2026-04-26T08:14:20.209Z [INFO] Project java version: 21
+2026-04-26T08:14:20.210Z [INFO] Maven project detected.
+2026-04-26T08:14:20.211Z [INFO] Build tool type: mvn
+2026-04-26T08:14:20.476Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Users\\direct\\.jdk\\jdk-21.0.8\\bin",
+  "version": "21"
+}
+2026-04-26T08:14:20.482Z [INFO] Build tool: {
+  "name": "mvn",
+  "path": "C:\\Program Files\\Apache NetBeans\\java\\maven\\bin",
+  "version": "",
+  "source": "PATH"
+}
+2026-04-26T08:14:20.483Z [INFO] Project config: {
+  "buildTool": {
+    "path": "C:\\Program Files\\Apache NetBeans\\java\\maven\\bin",
+    "name": "mvn",
+    "version": "",
+    "source": "PATH"
+  },
+  "jdk": {
+    "path": "C:\\Users\\direct\\.jdk\\jdk-21.0.8\\bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "calculadoraprorata",
+  "dir": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata"
+}
+2026-04-26T08:14:20.484Z [INFO] [Environment] Running command (Java undefined): mvn dependency:tree -B
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.directnet:calculadoraprorata >------------------
+[INFO] Building calculadoraprorata 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.7.0:tree (default-cli) @ calculadoraprorata ---
+[INFO] com.directnet:calculadoraprorata:jar:1.0-SNAPSHOT
+[INFO] \- junit:junit:jar:4.13.2:test
+[INFO]    \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.881 s
+[INFO] Finished at: 2026-04-26T05:14:24-03:00
+[INFO] ------------------------------------------------------------------------
+2026-04-26T08:14:24.670Z [INFO] [MavenBuildTool] Successfully got dependency tree of c:\Users\direct\Documents\VS Projects\calculadoraprorata
+2026-04-26T08:14:24.671Z [INFO] [MavenBuildTool] Getting Java version of c:\Users\direct\Documents\VS Projects\calculadoraprorata from pom.xml
+2026-04-26T08:14:24.671Z [INFO] [MavenBuildTool] Searching for pom.xml files in c:\Users\direct\Documents\VS Projects\calculadoraprorata
+2026-04-26T08:14:24.672Z [INFO] [MavenBuildTool] Getting all module coordinates of c:\Users\direct\Documents\VS Projects\calculadoraprorata
+2026-04-26T08:14:24.672Z [INFO] [MavenBuildTool] Getting effective POMs of c:\Users\direct\Documents\VS Projects\calculadoraprorata
+2026-04-26T08:14:24.673Z [INFO] [Environment] Running command (Java undefined): mvn help:effective-pom -Doutput=effective-pom-179b1d39-123d-4f00-95b1-5ba90adff249.log
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.directnet:calculadoraprorata >------------------
+[INFO] Building calculadoraprorata 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- help:3.5.1:effective-pom (default-cli) @ calculadoraprorata ---
+2026-04-26T08:14:27.592Z [INFO] Processing batch 1/1, size: 1
+2026-04-26T08:14:27.593Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-04-26T08:14:27.594Z [INFO] No proxy detected, using direct connection.
+2026-04-26T08:14:27.606Z [INFO] listing CVEs from GitHub for dependencies [
+  "junit:junit:4.13.2"
+]
+2026-04-26T08:14:27.606Z [INFO] GitHub Advisory API affects parameter: ["junit:junit@4.13.2"]
+2026-04-26T08:14:27.968Z [INFO] Fetched 0 total advisories across all pages
+2026-04-26T08:14:27.970Z [INFO] Advisory IDs returned: 
+2026-04-26T08:14:27.971Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-04-26T08:14:27.972Z [INFO] done getting 0 CVEs for 1 dependencies
+2026-04-26T08:14:27.974Z [INFO] calculating patched version by dep...
+2026-04-26T08:14:27.974Z [INFO] finished getting CVEs for dependencies.
+2026-04-26T08:14:27.975Z [INFO] Found 0 dependencies with known CVEs
+2026-04-26T08:14:27.975Z [INFO] No known CVEs that need to be fixed are found for dependencies: junit:junit:4.13.2
+2026-04-26T08:14:27.975Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-04-26T08:14:27.976Z [INFO] ----------------------invoked appmod-validate-cves-for-java----------------------
+[INFO] Effective-POM written to: c:\Users\direct\Documents\VS Projects\calculadoraprorata\effective-pom-179b1d39-123d-4f00-95b1-5ba90adff249.log
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.103 s
+[INFO] Finished at: 2026-04-26T05:14:28-03:00
+[INFO] ------------------------------------------------------------------------
+2026-04-26T08:14:28.358Z [INFO] [MavenBuildTool] Found pom.xml files: c:\Users\direct\Documents\VS Projects\calculadoraprorata\pom.xml
+2026-04-26T08:14:28.360Z [INFO] [MavenBuildTool] Java version found in c:\Users\direct\Documents\VS Projects\calculadoraprorata\pom.xml: 21
+2026-04-26T08:15:40.360Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-26T08:15:40.361Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "summaryGenerated",
+  "message": "Java upgrade completed successfully: calculadoraprorata upgraded from Java 1.7 to Java 21 LTS with 100% test pass rate and all EOL dependencies updated to supported versions.",
+  "phase": "summarize",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:15:40.361Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-26T08:15:40.362Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-26T08:15:40.362Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-26T08:15:40.417Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-26T08:15:40.418Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "event": "summaryGenerated",
+  "message": "Java upgrade completed successfully: calculadoraprorata upgraded from Java 1.7 to Java 21 LTS with 100% test pass rate and all EOL dependencies updated to supported versions.",
+  "phase": "summarize",
+  "projectPath": "c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata",
+  "sessionId": "20260426080537",
+  "status": "succeeded"
+}}).
+2026-04-26T08:15:40.418Z [INFO] [Tool.invoke] do invoke.
+2026-04-26T08:15:40.419Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'summaryGenerated' reported!\nSession ID: 20260426080537,\nSession Dir: c:\\Users\\direct\\Documents\\VS Projects\\calculadoraprorata\\.github\\java-upgrade\\20260426080537"
+}}).
+2026-04-26T08:15:40.420Z [INFO] ----------------------invoked appmod-report-event----------------------
