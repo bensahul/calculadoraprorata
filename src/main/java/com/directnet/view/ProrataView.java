@@ -23,6 +23,7 @@ public class ProrataView extends JFrame {
                     btnVoltar = new JButton("Voltar"), btnCopiar = new JButton("Copiar");
 
     public ProrataView() {
+        carregarIcone();
         setTitle("DIRECTNET - Pro rata");
         setSize(500, 600); // Aumentado levemente para acomodar margens
         setResizable(false);
@@ -140,6 +141,18 @@ public class ProrataView extends JFrame {
             StringSelection sel = new StringSelection(texto);
             Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel, null);
             JOptionPane.showMessageDialog(this, "Copiado!");
+        }
+    }
+
+    private void carregarIcone() {
+        try {
+            java.net.URL url = getClass().getResource("/images/logo.png");
+            if (url != null) {
+                Image icone = Toolkit.getDefaultToolkit().getImage(url);
+                this.setIconImage(icone);
+            }
+        } catch (Exception e) {
+            System.out.println("Não foi possível carregar o ícone.");
         }
     }
 

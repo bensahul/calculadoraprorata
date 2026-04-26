@@ -12,6 +12,7 @@ public class MenuView extends JFrame {
     private JButton btnSair = new JButton("Sair");
 
     public MenuView() {
+        carregarIcone();
         setTitle("DIRECTNET - Menu");
         setSize(500, 550);
         setResizable(false);
@@ -44,6 +45,18 @@ public class MenuView extends JFrame {
         add(painelBotoes, BorderLayout.CENTER);
 
         setLocationRelativeTo(null);
+    }
+
+    private void carregarIcone() {
+        try {
+            java.net.URL url = getClass().getResource("/images/logo.png");
+            if (url != null) {
+                Image icone = Toolkit.getDefaultToolkit().getImage(url);
+                this.setIconImage(icone);
+            }
+        } catch (Exception e) {
+            System.out.println("Não foi possível carregar o ícone.");
+        }
     }
 
     private void estilizarBotao(JButton btn) {

@@ -19,6 +19,7 @@ public class MultaView extends JFrame {
     private JButton btnCalcular = new JButton("Calcular"), btnLimpar = new JButton("Limpar"), btnVoltar = new JButton("Voltar");
 
     public MultaView() {
+        carregarIcone();
         setTitle("DIRECTNET - Multa");
         setSize(500, 600);
         setResizable(false);
@@ -129,6 +130,18 @@ public class MultaView extends JFrame {
         dataInicio.setDate(new Date());
         txtMeses.setText("0"); txtBase.setText("0,00"); txtTotal.setText("0,00");
     }
+
+    private void carregarIcone() {
+    try {
+        java.net.URL url = getClass().getResource("/images/logo.png");
+        if (url != null) {
+            Image icone = Toolkit.getDefaultToolkit().getImage(url);
+            this.setIconImage(icone);
+        }
+    } catch (Exception e) {
+        System.out.println("Não foi possível carregar o ícone.");
+    }
+}
 
     public JButton getBtnCalcular() { return btnCalcular; }
     public JButton getBtnLimpar() { return btnLimpar; }
