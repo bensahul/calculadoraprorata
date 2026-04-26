@@ -20,14 +20,17 @@ public class MultaView extends JFrame {
 
     public MultaView() {
         setTitle("DIRECTNET - Multa");
-        setSize(500, 550);
+        setSize(500, 600);
         setResizable(false);
         getContentPane().setBackground(Color.WHITE);
         setLayout(new BorderLayout());
 
+        ((JPanel)getContentPane()).setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
         JLabel lblHeader = new JLabel("DIRECTNET", SwingConstants.CENTER);
-        lblHeader.setFont(new Font("Arial", Font.BOLD, 22));
+        lblHeader.setFont(new Font("Arial", Font.BOLD, 24));
         lblHeader.setForeground(new Color(204, 0, 0));
+        lblHeader.setBorder(BorderFactory.createEmptyBorder(0, 0, 15, 0));
         add(lblHeader, BorderLayout.NORTH);
 
         JPanel central = new JPanel();
@@ -38,18 +41,29 @@ public class MultaView extends JFrame {
         rbPlano.setSelected(true);
 
         txtMulta = criarMonetario(); txtPlano = criarMonetario();
-        
+        Dimension dimC = new Dimension(160, 30);
+        txtMulta.setPreferredSize(dimC);
+        txtPlano.setPreferredSize(dimC);
+        dataInicio.setPreferredSize(dimC);
+
         central.add(criarLinhaRadio(rbPlano, txtPlano));
         central.add(criarLinhaRadio(rbMulta, txtMulta));
         central.add(criarLinha("Início Fidelidade:", dataInicio));
 
-        JPanel res = new JPanel(new GridLayout(3, 1));
+        central.add(Box.createVerticalStrut(20));
+
+        JPanel res = new JPanel(new GridLayout(3, 1, 5, 12));
         res.setBackground(Color.WHITE);
-        res.setBorder(BorderFactory.createTitledBorder(null, "Rescisão", 0, 0, null, new Color(204, 0, 0)));
+        res.setBorder(BorderFactory.createCompoundBorder(
+            BorderFactory.createTitledBorder(null, "Rescisão", 0, 0, null, new Color(204, 0, 0)),
+            BorderFactory.createEmptyBorder(15, 15, 15, 15)
+        ));
         res.add(criarLinha("Meses Restantes:", txtMeses));
         res.add(criarLinha("Base Mensal:", txtBase));
         res.add(criarLinha("Total Multa:", txtTotal));
+        
         txtTotal.setForeground(new Color(204, 0, 0));
+        txtTotal.setFont(new Font("Arial", Font.BOLD, 15));
         central.add(res);
 
         add(central, BorderLayout.CENTER);
@@ -62,7 +76,10 @@ public class MultaView extends JFrame {
         setLocationRelativeTo(null);
     }
 
-    private void alternar(boolean m) { txtMulta.setEnabled(m); txtPlano.setEnabled(!m); }
+    private void alternar(boolean m) { 
+        txtMulta.setEnabled(m); 
+        txtPlano.setEnabled(!m); 
+    }
 
     private JFormattedTextField criarMonetario() {
         NumberFormat nf = NumberFormat.getNumberInstance();
@@ -73,26 +90,35 @@ public class MultaView extends JFrame {
     }
 
     private JTextField criarVisor() {
-        JTextField tf = new JTextField(10);
+        JTextField tf = new JTextField(12);
         tf.setEditable(false);
         tf.setHorizontalAlignment(JTextField.RIGHT);
+        tf.setBackground(Color.WHITE);
         return tf;
     }
 
     private JPanel criarLinha(String t, Component c) {
-        JPanel p = new JPanel(new FlowLayout(FlowLayout.RIGHT));
-        p.setBackground(Color.WHITE); p.add(new JLabel(t)); p.add(c);
+        JPanel p = new JPanel(new FlowLayout(FlowLayout.RIGHT, 15, 0));
+        p.setBackground(Color.WHITE); 
+        p.add(new JLabel(t)); 
+        p.add(c);
         return p;
     }
 
     private JPanel criarLinhaRadio(JRadioButton r, Component c) {
-        JPanel p = new JPanel(new FlowLayout(FlowLayout.RIGHT));
-        p.setBackground(Color.WHITE); r.setBackground(Color.WHITE); p.add(r); p.add(c);
+        JPanel p = new JPanel(new FlowLayout(FlowLayout.RIGHT, 15, 0));
+        p.setBackground(Color.WHITE); r.setBackground(Color.WHITE); 
+        p.add(r); p.add(c);
         return p;
     }
 
     private JPanel criarBotoes() {
-        JPanel p = new JPanel(); p.setBackground(Color.WHITE);
+        JPanel p = new JPanel(new FlowLayout(FlowLayout.CENTER, 20, 15));
+        p.setBackground(Color.WHITE);
+        Dimension dimB = new Dimension(110, 35);
+        btnCalcular.setPreferredSize(dimB);
+        btnLimpar.setPreferredSize(dimB);
+        btnVoltar.setPreferredSize(dimB);
         p.add(btnCalcular); p.add(btnLimpar); p.add(btnVoltar);
         return p;
     }

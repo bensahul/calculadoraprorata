@@ -19,10 +19,13 @@ public class MenuView extends JFrame {
         setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         setLayout(new BorderLayout());
 
+        // Margem externa para o menu não ficar colado nas bordas
+        ((JPanel)getContentPane()).setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
         JLabel lblTitulo = new JLabel("DIRECTNET", SwingConstants.CENTER);
         lblTitulo.setFont(new Font("Arial", Font.BOLD, 30));
         lblTitulo.setForeground(new Color(204, 0, 0));
-        lblTitulo.setBorder(BorderFactory.createEmptyBorder(50, 0, 20, 0));
+        lblTitulo.setBorder(BorderFactory.createEmptyBorder(30, 0, 30, 0));
         add(lblTitulo, BorderLayout.NORTH);
 
         JPanel painelBotoes = new JPanel(new GridBagLayout());
