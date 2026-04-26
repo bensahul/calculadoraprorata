@@ -11,7 +11,7 @@ import java.util.Date;
 /**
  * @author Gleydson
  */
-public class MultaView extends JFrame {
+public class MultaView extends BaseView {
     private JRadioButton rbMulta = new JRadioButton("Multa Fixa"), rbPlano = new JRadioButton("50% Plano");
     private JFormattedTextField txtMulta, txtPlano;
     private JDateChooser dataInicio = new JDateChooser();
@@ -19,29 +19,26 @@ public class MultaView extends JFrame {
     private JButton btnCalcular = new JButton("Calcular"), btnLimpar = new JButton("Limpar"), btnVoltar = new JButton("Voltar");
 
     public MultaView() {
-        carregarIcone();
-        setTitle("DIRECTNET - Multa");
-        setSize(500, 600);
-        setResizable(false);
-        getContentPane().setBackground(Color.WHITE);
+        super("Multa"); // Já configura título, tamanho, ícone, fundo branco e centralização
+        
         setLayout(new BorderLayout());
-
         ((JPanel)getContentPane()).setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
-        JLabel lblHeader = new JLabel("DIRECTNET", SwingConstants.CENTER);
-        lblHeader.setFont(new Font("Arial", Font.BOLD, 24));
-        lblHeader.setForeground(new Color(204, 0, 0));
-        lblHeader.setBorder(BorderFactory.createEmptyBorder(0, 0, 15, 0));
-        add(lblHeader, BorderLayout.NORTH);
+        // Usa o método da BaseView para o cabeçalho
+        add(criarHeader(), BorderLayout.NORTH);
 
         JPanel central = new JPanel();
         central.setLayout(new BoxLayout(central, BoxLayout.Y_AXIS));
         central.setBackground(Color.WHITE);
 
-        ButtonGroup bg = new ButtonGroup(); bg.add(rbMulta); bg.add(rbPlano);
+        ButtonGroup bg = new ButtonGroup(); 
+        bg.add(rbMulta); 
+        bg.add(rbPlano);
         rbPlano.setSelected(true);
 
-        txtMulta = criarMonetario(); txtPlano = criarMonetario();
+        txtMulta = criarMonetario(); 
+        txtPlano = criarMonetario();
+        
         Dimension dimC = new Dimension(160, 30);
         txtMulta.setPreferredSize(dimC);
         txtPlano.setPreferredSize(dimC);
@@ -74,9 +71,9 @@ public class MultaView extends JFrame {
         rbPlano.addActionListener(e -> alternar(false));
         
         limparTudo();
-        setLocationRelativeTo(null);
     }
 
+    // MÉTODOS AUXILIARES
     private void alternar(boolean m) { 
         txtMulta.setEnabled(m); 
         txtPlano.setEnabled(!m); 
@@ -108,8 +105,10 @@ public class MultaView extends JFrame {
 
     private JPanel criarLinhaRadio(JRadioButton r, Component c) {
         JPanel p = new JPanel(new FlowLayout(FlowLayout.RIGHT, 15, 0));
-        p.setBackground(Color.WHITE); r.setBackground(Color.WHITE); 
-        p.add(r); p.add(c);
+        p.setBackground(Color.WHITE); 
+        r.setBackground(Color.WHITE); 
+        p.add(r); 
+        p.add(c);
         return p;
     }
 
@@ -125,24 +124,17 @@ public class MultaView extends JFrame {
     }
 
     public void limparTudo() {
-        rbPlano.setSelected(true); alternar(false);
-        txtPlano.setValue(0.0); txtMulta.setValue(0.0);
+        rbPlano.setSelected(true); 
+        alternar(false);
+        txtPlano.setValue(0.0); 
+        txtMulta.setValue(0.0);
         dataInicio.setDate(new Date());
-        txtMeses.setText("0"); txtBase.setText("0,00"); txtTotal.setText("0,00");
+        txtMeses.setText("0"); 
+        txtBase.setText("0,00"); 
+        txtTotal.setText("0,00");
     }
 
-    private void carregarIcone() {
-    try {
-        java.net.URL url = getClass().getResource("/images/logo.png");
-        if (url != null) {
-            Image icone = Toolkit.getDefaultToolkit().getImage(url);
-            this.setIconImage(icone);
-        }
-    } catch (Exception e) {
-        System.out.println("Não foi possível carregar o ícone.");
-    }
-}
-
+    // GETTERS
     public JButton getBtnCalcular() { return btnCalcular; }
     public JButton getBtnLimpar() { return btnLimpar; }
     public JButton getBtnVoltar() { return btnVoltar; }

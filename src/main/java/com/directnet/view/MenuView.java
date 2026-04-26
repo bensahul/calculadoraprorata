@@ -6,31 +6,27 @@ import java.awt.*;
 /**
  * @author Gleydson
  */
-public class MenuView extends JFrame {
+public class MenuView extends BaseView {
     private JButton btnProrata = new JButton("Pro rata");
     private JButton btnMulta = new JButton("Multa Rescisória");
     private JButton btnSair = new JButton("Sair");
 
     public MenuView() {
-        carregarIcone();
-        setTitle("DIRECTNET - Menu");
-        setSize(500, 550);
-        setResizable(false);
-        getContentPane().setBackground(Color.WHITE);
-        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
-        setLayout(new BorderLayout());
+        super("Menu"); // Configura título, ícone, tamanho, fundo e centralização automaticamente
 
-        // Margem externa para o menu não ficar colado nas bordas
+        setLayout(new BorderLayout());
         ((JPanel)getContentPane()).setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
-        JLabel lblTitulo = new JLabel("DIRECTNET", SwingConstants.CENTER);
+        // Título maior específico para o Menu
+        JLabel lblTitulo = criarHeader();
         lblTitulo.setFont(new Font("Arial", Font.BOLD, 30));
-        lblTitulo.setForeground(new Color(204, 0, 0));
         lblTitulo.setBorder(BorderFactory.createEmptyBorder(30, 0, 30, 0));
         add(lblTitulo, BorderLayout.NORTH);
 
+        // Painel central para os botões
         JPanel painelBotoes = new JPanel(new GridBagLayout());
         painelBotoes.setBackground(Color.WHITE);
+        
         JPanel inner = new JPanel(new GridLayout(3, 1, 10, 25));
         inner.setBackground(Color.WHITE);
         
@@ -41,22 +37,9 @@ public class MenuView extends JFrame {
         inner.add(btnProrata);
         inner.add(btnMulta);
         inner.add(btnSair);
+        
         painelBotoes.add(inner);
         add(painelBotoes, BorderLayout.CENTER);
-
-        setLocationRelativeTo(null);
-    }
-
-    private void carregarIcone() {
-        try {
-            java.net.URL url = getClass().getResource("/images/logo.png");
-            if (url != null) {
-                Image icone = Toolkit.getDefaultToolkit().getImage(url);
-                this.setIconImage(icone);
-            }
-        } catch (Exception e) {
-            System.out.println("Não foi possível carregar o ícone.");
-        }
     }
 
     private void estilizarBotao(JButton btn) {

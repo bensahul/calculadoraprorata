@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * @author Gleydson
  */
-public class ProrataView extends JFrame {
+public class ProrataView extends BaseView {
     private JDateChooser dataInicio = new JDateChooser();
     private JDateChooser dataFim = new JDateChooser();
     private JFormattedTextField txtValorPlano, txtDesconto;
@@ -23,21 +23,13 @@ public class ProrataView extends JFrame {
                     btnVoltar = new JButton("Voltar"), btnCopiar = new JButton("Copiar");
 
     public ProrataView() {
-        carregarIcone();
-        setTitle("DIRECTNET - Pro rata");
-        setSize(500, 600); // Aumentado levemente para acomodar margens
-        setResizable(false);
-        getContentPane().setBackground(Color.WHITE);
+        super("Pro rata"); // Configura título, ícone, tamanho, fundo e centralização automaticamente
+        
         setLayout(new BorderLayout());
-
-        // Margem de respiro de 20px em todos os lados
         ((JPanel)getContentPane()).setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
-        JLabel lblHeader = new JLabel("DIRECTNET", SwingConstants.CENTER);
-        lblHeader.setFont(new Font("Arial", Font.BOLD, 24));
-        lblHeader.setForeground(new Color(204, 0, 0));
-        lblHeader.setBorder(BorderFactory.createEmptyBorder(0, 0, 15, 0));
-        add(lblHeader, BorderLayout.NORTH);
+        // Usa o método herdado da BaseView para o cabeçalho
+        add(criarHeader(), BorderLayout.NORTH);
 
         JPanel central = new JPanel();
         central.setLayout(new BoxLayout(central, BoxLayout.Y_AXIS));
@@ -45,7 +37,6 @@ public class ProrataView extends JFrame {
 
         configurarInputs();
         
-        // Aumentando tamanho dos campos para 30px de altura
         Dimension dimCampo = new Dimension(160, 30);
         txtValorPlano.setPreferredSize(dimCampo);
         txtDesconto.setPreferredSize(dimCampo);
@@ -87,7 +78,6 @@ public class ProrataView extends JFrame {
         add(criarBotoes(), BorderLayout.SOUTH);
         
         limparTudo();
-        setLocationRelativeTo(null);
     }
 
     private void configurarInputs() {
@@ -95,8 +85,9 @@ public class ProrataView extends JFrame {
         nf.setMinimumFractionDigits(2);
         NumberFormatter nfr = new NumberFormatter(nf);
         nfr.setValueClass(Double.class);
-        txtValorPlano = new JFormattedTextField(new DefaultFormatterFactory(nfr));
-        txtDesconto = new JFormattedTextField(new DefaultFormatterFactory(nfr));
+        DefaultFormatterFactory dff = new DefaultFormatterFactory(nfr);
+        txtValorPlano = new JFormattedTextField(dff);
+        txtDesconto = new JFormattedTextField(dff);
     }
 
     private JTextField criarVisor() {
@@ -104,7 +95,6 @@ public class ProrataView extends JFrame {
         tf.setEditable(false);
         tf.setHorizontalAlignment(JTextField.RIGHT);
         tf.setBackground(Color.WHITE);
-        tf.setPreferredSize(new Dimension(120, 25));
         return tf;
     }
 
@@ -128,10 +118,14 @@ public class ProrataView extends JFrame {
     }
 
     public void limparTudo() {
-        txtValorPlano.setValue(0.0); txtDesconto.setValue(0.0);
-        dataInicio.setDate(new Date()); dataFim.setDate(new Date());
-        txtDiasCorridos.setText("0"); txtValorProp.setText("0,00");
-        txtDescProp.setText("0,00"); txtTotal.setText("0,00");
+        txtValorPlano.setValue(0.0); 
+        txtDesconto.setValue(0.0);
+        dataInicio.setDate(new Date()); 
+        dataFim.setDate(new Date());
+        txtDiasCorridos.setText("0"); 
+        txtValorProp.setText("0,00");
+        txtDescProp.setText("0,00"); 
+        txtTotal.setText("0,00");
         areaReferencia.setText("");
     }
 
@@ -144,18 +138,7 @@ public class ProrataView extends JFrame {
         }
     }
 
-    private void carregarIcone() {
-        try {
-            java.net.URL url = getClass().getResource("/images/logo.png");
-            if (url != null) {
-                Image icone = Toolkit.getDefaultToolkit().getImage(url);
-                this.setIconImage(icone);
-            }
-        } catch (Exception e) {
-            System.out.println("Não foi possível carregar o ícone.");
-        }
-    }
-
+    // Getters e Setters
     public JButton getBtnCalcular() { return btnCalcular; }
     public JButton getBtnLimpar() { return btnLimpar; }
     public JButton getBtnVoltar() { return btnVoltar; }
