@@ -1,0 +1,1 @@
+O software está sendo criado para uso exclusivo em uma determinada empresa. 100% do código está sendo gerado pelo Google AI. A logística do aplicativo e a escolha do modelo MVC foram definidos com base no meu conhecimento de aluno universitário de curso em andamento.
